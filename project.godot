@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Game Feature Recreation"
+run/main_scene="res://SmashCharacterSelect/SmashCharacterSelectMain.tscn"
 config/icon="res://icon.png"
 
 [physics]
