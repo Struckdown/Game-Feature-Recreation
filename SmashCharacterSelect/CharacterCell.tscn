@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://SmashCharacterSelect/reference.png" type="Texture" id=1]
 [ext_resource path="res://SmashCharacterSelect/Assets/blackwhitecube.png" type="Texture" id=2]
@@ -6,8 +6,12 @@
 [ext_resource path="res://SmashCharacterSelect/CharacterCell.gd" type="Script" id=4]
 [ext_resource path="res://SourceSansProRegular/SourceSansPro-Regular.ttf" type="DynamicFontData" id=5]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 136, 91 )
+
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
+size = 6
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 5 )
@@ -34,7 +38,7 @@ margin_bottom = 184.0
 
 [node name="Control" type="Control" parent="MarginContainer/VBoxContainer"]
 margin_right = 262.0
-margin_bottom = 159.0
+margin_bottom = 172.0
 size_flags_vertical = 3
 
 [node name="BG" type="TextureRect" parent="MarginContainer/VBoxContainer/Control"]
@@ -60,24 +64,30 @@ margin_bottom = 0.0129929
 
 [node name="Portrait" type="TextureRect" parent="MarginContainer/VBoxContainer/Control/BG/MarginContainer"]
 margin_right = 589.0
-margin_bottom = 411.0
+margin_bottom = 445.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 5
 
+[node name="SelectionArea" type="Area2D" parent="MarginContainer/VBoxContainer/Control/BG" groups=["selectableCharacter"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/Control/BG/SelectionArea"]
+position = Vector2( 126, 81 )
+shape = SubResource( 2 )
+
 [node name="MarginContainer" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
-margin_top = 163.0
+margin_top = 176.0
 margin_right = 262.0
 margin_bottom = 184.0
 
 [node name="Name" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
-margin_left = 114.0
-margin_right = 147.0
-margin_bottom = 21.0
+margin_left = 106.0
+margin_right = 155.0
+margin_bottom = 8.0
 custom_fonts/font = SubResource( 1 )
-text = "Luigi"
+text = "Mr Game And Watch"
 align = 1
 valign = 1
 

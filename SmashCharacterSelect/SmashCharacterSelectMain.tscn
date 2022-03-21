@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://SmashCharacterSelect/CharacterCell.tscn" type="PackedScene" id=1]
 [ext_resource path="res://SmashCharacterSelect/PlayerSlot.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://SmashCharacterSelect/Assets/BackArrow.png" type="Texture" id=4]
 [ext_resource path="res://SmashCharacterSelect/Assets/leftCornerImage.png" type="Texture" id=5]
 [ext_resource path="res://SmashCharacterSelect/reference.png" type="Texture" id=6]
+[ext_resource path="res://SmashCharacterSelect/CharacterPicker.tscn" type="PackedScene" id=7]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_bowser.png" type="Texture" id=8]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_younglink.png" type="Texture" id=9]
 [ext_resource path="res://SmashCharacterSelect/Assets/blackwhitecube.png" type="Texture" id=10]
@@ -27,6 +28,7 @@
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_peach.png" type="Texture" id=26]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_mario.png" type="Texture" id=27]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_wario.png" type="Texture" id=28]
+[ext_resource path="res://SmashCharacterSelect/PlayerHand.tscn" type="PackedScene" id=29]
 
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
@@ -451,6 +453,13 @@ texture = ExtResource( 4 )
 [node name="Reference" type="Sprite" parent="."]
 position = Vector2( 2443, 403 )
 texture = ExtResource( 6 )
+
+[node name="CharacterPicker" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1048, 296 )
+playerSlotRef = NodePath("../VBoxContainer/HBoxContainer/PlayerSlot")
+
+[node name="PlayerHand" parent="." instance=ExtResource( 29 )]
+position = Vector2( 443, 352 )
 
 [connection signal="pressed" from="TopBar/SubOption/Decrement" to="." method="_on_Decrement_pressed"]
 [connection signal="pressed" from="TopBar/SubOption/Increment" to="." method="_on_Increment_pressed"]

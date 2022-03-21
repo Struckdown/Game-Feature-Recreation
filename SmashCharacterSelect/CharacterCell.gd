@@ -4,7 +4,6 @@ tool
 export(String) var charName #setget updateCharName
 export(Texture) var characterPortrait #setget updatePortrait
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	updateCharName(charName)
