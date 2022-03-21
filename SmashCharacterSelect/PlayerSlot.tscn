@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_bowser.png" type="Texture" id=1]
 [ext_resource path="res://SmashCharacterSelect/Assets/slotBorder.png" type="Texture" id=2]
@@ -10,17 +10,88 @@
 [ext_resource path="res://SmashCharacterSelect/Assets/hexagon.png" type="Texture" id=8]
 [ext_resource path="res://SmashCharacterSelect/Assets/behindIconSlot.png" type="Texture" id=9]
 [ext_resource path="res://SmashCharacterSelect/reference2.png" type="Texture" id=10]
+[ext_resource path="res://SmashCharacterSelect/PlayerSlot.gd" type="Script" id=11]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("slotBG/slotBorder/Portrait:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 44.818, -24.068 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("slotBG/slotBorder/Portrait:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "SelectCharacter"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("slotBG/slotBorder/Portrait:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 44.818, -24.068 ), Vector2( -120, -24.068 ), Vector2( 343, -24.068 ), Vector2( 44.818, -24.068 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("slotBG/slotBorder/Portrait:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "updateCharacterTexture"
+} ]
+}
 
 [node name="PlayerSlot" type="MarginContainer"]
 self_modulate = Color( 1, 0.309804, 0.309804, 1 )
-anchor_right = 0.938
-margin_right = 0.487976
-margin_bottom = 467.0
+anchor_right = 0.687
+margin_right = -0.360046
+margin_bottom = 559.0
 size_flags_horizontal = 3
+script = ExtResource( 11 )
 
 [node name="slotBG" type="TextureRect" parent="."]
-margin_right = 961.0
-margin_bottom = 467.0
+margin_right = 878.0
+margin_bottom = 559.0
 texture = ExtResource( 3 )
 expand = true
 
@@ -58,82 +129,82 @@ expand = true
 stretch_mode = 4
 
 [node name="Portrait" type="TextureRect" parent="slotBG/slotBorder"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 49.0
-margin_top = -26.0
-margin_right = -214.0
-margin_bottom = 14.0
+anchor_left = 0.051
+anchor_top = 0.021
+anchor_right = 0.777
+anchor_bottom = 1.03
+margin_left = 0.0399971
+margin_top = -35.807
+margin_right = 20.612
+margin_bottom = -28.838
 texture = ExtResource( 1 )
 expand = true
 
-[node name="PlayerInfo" type="TextureRect" parent="slotBG/slotBorder"]
-anchor_left = 0.641
-anchor_right = 1.0
+[node name="PlayerInfo" type="VBoxContainer" parent="slotBG/slotBorder"]
+anchor_left = 0.3
+anchor_top = 0.8
+anchor_right = 0.7
 anchor_bottom = 1.0
-margin_left = 0.0429688
-margin_top = 394.0
-margin_right = -38.0
-margin_bottom = -2.0
-texture = ExtResource( 5 )
-expand = true
 
-[node name="Controller" type="TextureRect" parent="slotBG/slotBorder/PlayerInfo"]
-anchor_left = 0.141
-anchor_top = 0.324
-anchor_right = 0.385
-anchor_bottom = 0.803
-margin_left = 0.0949993
-margin_top = -0.00399971
-margin_right = 0.0749969
-margin_bottom = -0.0130005
-texture = ExtResource( 6 )
-expand = true
-stretch_mode = 5
+[node name="PlayerNameContainer" type="MarginContainer" parent="slotBG/slotBorder/PlayerInfo"]
+margin_right = 351.0
+margin_bottom = 53.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="PlayerNum" type="Label" parent="slotBG/slotBorder/PlayerInfo"]
-self_modulate = Color( 0, 0, 0, 1 )
-anchor_left = 0.605
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 0.291611
-margin_top = 11.0
-margin_right = -59.956
-margin_bottom = -32.0
-rect_scale = Vector2( 2, 2 )
-text = "P1"
-align = 1
-valign = 1
-
-[node name="MarginContainer" type="MarginContainer" parent="slotBG/slotBorder/PlayerInfo"]
-margin_left = 13.0
-margin_top = -76.0
-margin_right = 292.0
-margin_bottom = -9.0
-
-[node name="PlayerNameBG" type="TextureRect" parent="slotBG/slotBorder/PlayerInfo/MarginContainer"]
-margin_right = 279.0
-margin_bottom = 67.0
+[node name="PlayerNameBG" type="TextureRect" parent="slotBG/slotBorder/PlayerInfo/PlayerNameContainer"]
+margin_right = 351.0
+margin_bottom = 53.0
 texture = ExtResource( 7 )
 expand = true
 
-[node name="PlayerName" type="Label" parent="slotBG/slotBorder/PlayerInfo/MarginContainer/PlayerNameBG"]
+[node name="PlayerName" type="Label" parent="slotBG/slotBorder/PlayerInfo/PlayerNameContainer/PlayerNameBG"]
 modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 15.0
-margin_top = 14.0
-margin_right = -140.0
-margin_bottom = -33.0
-rect_scale = Vector2( 2, 2 )
 text = "Player 1"
 align = 1
 valign = 1
 
+[node name="PlayerInfo" type="TextureRect" parent="slotBG/slotBorder/PlayerInfo"]
+margin_top = 57.0
+margin_right = 351.0
+margin_bottom = 111.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 5 )
+expand = true
+
+[node name="Controller" type="TextureRect" parent="slotBG/slotBorder/PlayerInfo/PlayerInfo"]
+anchor_left = 0.1
+anchor_top = 0.3
+anchor_right = 0.3
+anchor_bottom = 0.9
+margin_top = -0.00399971
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 5
+
+[node name="PlayerNum" type="Label" parent="slotBG/slotBorder/PlayerInfo/PlayerInfo"]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.7
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.291611
+text = "P1"
+align = 1
+valign = 1
+
 [node name="Reference" type="Sprite" parent="."]
+visible = false
 position = Vector2( 2051, -152 )
 texture = ExtResource( 4 )
 
 [node name="Reference2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 2046, 954 )
 texture = ExtResource( 10 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+anims/SelectCharacter = SubResource( 2 )

@@ -11,8 +11,15 @@ config_version=4
 [application]
 
 config/name="Game Feature Recreation"
+config/description="A series of mini projects recreating features from various games."
 run/main_scene="res://SmashCharacterSelect/SmashCharacterSelectMain.tscn"
-config/icon="res://icon.png"
+config/icon="res://SmashCharacterSelect/Assets/controller.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+mouse_cursor/custom_image="res://SmashCharacterSelect/Assets/pointer.png"
 
 [physics]
 
