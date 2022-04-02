@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://SmashCharacterSelect/reference.png" type="Texture" id=1]
 [ext_resource path="res://SmashCharacterSelect/Assets/blackwhitecube.png" type="Texture" id=2]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_luigi.png" type="Texture" id=3]
 [ext_resource path="res://SmashCharacterSelect/CharacterCell.gd" type="Script" id=4]
 [ext_resource path="res://SourceSansProRegular/SourceSansPro-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://SmashCharacterSelect/Assets/hexagon.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
@@ -27,6 +28,7 @@ size_flags_vertical = 3
 script = ExtResource( 4 )
 charName = "Mr Game And Watch"
 characterPortrait = ExtResource( 3 )
+gameicon = ExtResource( 6 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 margin_right = 262.0
@@ -58,13 +60,13 @@ anchor_top = -0.256
 anchor_right = 1.969
 anchor_bottom = 2.333
 margin_left = 96.622
-margin_top = -0.0159988
-margin_right = 96.622
-margin_bottom = 0.0130005
+margin_top = 0.0320015
+margin_right = -51.8779
+margin_bottom = -3.276
 
 [node name="Portrait" type="TextureRect" parent="MarginContainer/VBoxContainer/Control/BG/MarginContainer"]
-margin_right = 589.0
-margin_bottom = 445.0
+margin_right = 441.0
+margin_bottom = 442.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 3 )

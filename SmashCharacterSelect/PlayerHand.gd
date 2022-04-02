@@ -10,6 +10,9 @@ func _ready():
 
 func _input(event):
 	if event is InputEventMouseButton:
+		if not event.pressed:	# handle release
+			if grabbed:
+				grabbed.playerSlotRef.markReleased(true)
 		if len(grabbableObjects) <= 0:
 			return
 		if grabbed:
@@ -23,6 +26,7 @@ func _input(event):
 				closest = obj
 				dist = sqrDist
 		grabbed = closest
+		grabbed.playerSlotRef.markReleased(false)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):

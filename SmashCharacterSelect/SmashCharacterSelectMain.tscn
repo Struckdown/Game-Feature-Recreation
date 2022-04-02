@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://SmashCharacterSelect/CharacterCell.tscn" type="PackedScene" id=1]
 [ext_resource path="res://SmashCharacterSelect/PlayerSlot.tscn" type="PackedScene" id=2]
@@ -35,6 +35,8 @@
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_spaceship.png" type="Texture" id=33]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_dodo.png" type="Texture" id=34]
 [ext_resource path="res://SourceSansProRegular/SourceSansPro-Regular.ttf" type="DynamicFontData" id=35]
+[ext_resource path="res://SmashCharacterSelect/Assets/Characters/icon_mario.png" type="Texture" id=36]
+[ext_resource path="res://SmashCharacterSelect/Assets/Characters/icon_zelda.png" type="Texture" id=37]
 
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
@@ -42,6 +44,32 @@ size = 15
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=3]
+resource_local_to_scene = true
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 35 )
+
+[sub_resource type="DynamicFont" id=4]
+resource_local_to_scene = true
+size = 11
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 35 )
+
+[sub_resource type="DynamicFont" id=5]
+resource_local_to_scene = true
+size = 12
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 35 )
+
+[sub_resource type="DynamicFont" id=6]
+resource_local_to_scene = true
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 35 )
 
 [sub_resource type="DynamicFont" id=2]
 resource_local_to_scene = true
@@ -227,6 +255,7 @@ margin_right = 192.0
 margin_bottom = 65.0
 charName = "Bowser"
 characterPortrait = ExtResource( 8 )
+gameicon = ExtResource( 36 )
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Bowser" index="0"]
 margin_right = 192.0
@@ -271,6 +300,7 @@ margin_right = 388.0
 margin_bottom = 65.0
 charName = "Young Link"
 characterPortrait = ExtResource( 9 )
+gameicon = ExtResource( 37 )
 
 [node name="Luigi" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -279,6 +309,7 @@ margin_left = 392.0
 margin_right = 584.0
 margin_bottom = 65.0
 charName = "Luigi"
+gameicon = ExtResource( 36 )
 
 [node name="BowserJr" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -288,6 +319,7 @@ margin_right = 780.0
 margin_bottom = 65.0
 charName = "Bowser Jr"
 characterPortrait = ExtResource( 16 )
+gameicon = ExtResource( 36 )
 
 [node name="Daisy" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -297,6 +329,7 @@ margin_right = 976.0
 margin_bottom = 65.0
 charName = "Daisy"
 characterPortrait = ExtResource( 21 )
+gameicon = ExtResource( 36 )
 
 [node name="Diddy" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -315,6 +348,7 @@ margin_right = 192.0
 margin_bottom = 134.0
 charName = "DK"
 characterPortrait = ExtResource( 17 )
+gameicon = ExtResource( 36 )
 
 [node name="DrMario" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -325,6 +359,7 @@ margin_right = 388.0
 margin_bottom = 134.0
 charName = "Dr Mario"
 characterPortrait = ExtResource( 20 )
+gameicon = ExtResource( 36 )
 
 [node name="IceClimbers" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -345,6 +380,7 @@ margin_right = 780.0
 margin_bottom = 134.0
 charName = "Link"
 characterPortrait = ExtResource( 25 )
+gameicon = ExtResource( 37 )
 
 [node name="Mario" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -355,6 +391,7 @@ margin_right = 976.0
 margin_bottom = 134.0
 charName = "Mario"
 characterPortrait = ExtResource( 27 )
+gameicon = ExtResource( 36 )
 
 [node name="Peach" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -365,6 +402,7 @@ margin_right = 1172.0
 margin_bottom = 134.0
 charName = "Peach"
 characterPortrait = ExtResource( 26 )
+gameicon = ExtResource( 36 )
 
 [node name="Rosalina" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -374,6 +412,7 @@ margin_right = 192.0
 margin_bottom = 203.0
 charName = "Rosalina"
 characterPortrait = ExtResource( 24 )
+gameicon = ExtResource( 36 )
 
 [node name="Wario" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -384,6 +423,7 @@ margin_right = 388.0
 margin_bottom = 203.0
 charName = "Wario"
 characterPortrait = ExtResource( 28 )
+gameicon = ExtResource( 36 )
 
 [node name="Yoshi" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -394,6 +434,7 @@ margin_right = 584.0
 margin_bottom = 203.0
 charName = "Yoshi"
 characterPortrait = ExtResource( 22 )
+gameicon = ExtResource( 36 )
 
 [node name="Zelda" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -404,6 +445,42 @@ margin_right = 780.0
 margin_bottom = 203.0
 charName = "Zelda"
 characterPortrait = ExtResource( 23 )
+gameicon = ExtResource( 37 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Zelda" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="VBoxContainer" parent="VBoxContainer/Control/GridContainer/Zelda/MarginContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Control" parent="VBoxContainer/Control/GridContainer/Zelda/MarginContainer/VBoxContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 40.0
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Zelda/MarginContainer/VBoxContainer/Control/BG" index="0"]
+margin_left = 89.952
+margin_top = 7.24
+margin_right = -189.048
+margin_bottom = 42.68
+
+[node name="Portrait" parent="VBoxContainer/Control/GridContainer/Zelda/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
+margin_right = 153.0
+margin_bottom = 139.0
+texture = ExtResource( 23 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Zelda/MarginContainer/VBoxContainer" index="1"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Name" parent="VBoxContainer/Control/GridContainer/Zelda/MarginContainer/VBoxContainer/MarginContainer" index="0"]
+margin_left = 77.0
+margin_right = 115.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 3 )
+text = "Zelda"
 
 [node name="BiggyFishy" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -414,6 +491,41 @@ margin_right = 976.0
 margin_bottom = 203.0
 charName = "Biggy Fishy"
 characterPortrait = ExtResource( 30 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/BiggyFishy" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="VBoxContainer" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Control" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 47.0
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer/Control/BG" index="0"]
+margin_left = 110.952
+margin_top = -2.968
+margin_right = -58.0479
+margin_bottom = -50.651
+
+[node name="Portrait" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
+margin_right = 263.0
+margin_bottom = 74.0
+texture = ExtResource( 30 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer" index="1"]
+margin_top = 51.0
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Name" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer/MarginContainer" index="0"]
+margin_left = 70.0
+margin_right = 122.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 4 )
+text = "Biggy Fishy"
 
 [node name="GrammaMorley" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -434,6 +546,41 @@ margin_bottom = 272.0
 charName = "Space Ship"
 characterPortrait = ExtResource( 33 )
 
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/SpaceShip" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="VBoxContainer" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Control" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 45.0
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer/Control/BG" index="0"]
+margin_left = 113.952
+margin_top = 4.52
+margin_right = -240.048
+margin_bottom = -44.985
+
+[node name="Portrait" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
+margin_right = 78.0
+margin_bottom = 67.0
+texture = ExtResource( 33 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer" index="1"]
+margin_top = 49.0
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Name" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer/MarginContainer" index="0"]
+margin_left = 68.0
+margin_right = 123.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 5 )
+text = "Space Ship"
+
 [node name="Dodo" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -443,6 +590,41 @@ margin_right = 388.0
 margin_bottom = 272.0
 charName = "Dodo"
 characterPortrait = ExtResource( 34 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Dodo" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="VBoxContainer" parent="VBoxContainer/Control/GridContainer/Dodo/MarginContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Control" parent="VBoxContainer/Control/GridContainer/Dodo/MarginContainer/VBoxContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 40.0
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Dodo/MarginContainer/VBoxContainer/Control/BG" index="0"]
+margin_left = 125.952
+margin_top = 6.24
+margin_right = -219.048
+margin_bottom = -44.32
+
+[node name="Portrait" parent="VBoxContainer/Control/GridContainer/Dodo/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
+margin_right = 87.0
+margin_bottom = 53.0
+texture = ExtResource( 34 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Dodo/MarginContainer/VBoxContainer" index="1"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Name" parent="VBoxContainer/Control/GridContainer/Dodo/MarginContainer/VBoxContainer/MarginContainer" index="0"]
+margin_left = 77.0
+margin_right = 114.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 6 )
+text = "Dodo"
 
 [node name="Raine" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -552,8 +734,19 @@ position = Vector2( 2443, 403 )
 texture = ExtResource( 6 )
 
 [node name="CharacterPicker" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1048, 296 )
+position = Vector2( 1050, 304 )
 playerSlotRef = NodePath("../VBoxContainer/HBoxContainer/PlayerSlot")
+
+[node name="Token" parent="CharacterPicker" index="0"]
+self_modulate = Color( 0.768627, 0.160784, 0.160784, 1 )
+
+[node name="CharacterPicker2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1167, 325 )
+playerNum = 2
+playerSlotRef = NodePath("../VBoxContainer/HBoxContainer/PlayerSlot2")
+
+[node name="Token" parent="CharacterPicker2" index="0"]
+self_modulate = Color( 0.25098, 0.160784, 0.768627, 1 )
 
 [node name="PlayerHand" parent="." instance=ExtResource( 29 )]
 position = Vector2( 443, 352 )
@@ -562,4 +755,10 @@ position = Vector2( 443, 352 )
 [connection signal="pressed" from="TopBar/SubOption/Increment" to="." method="_on_Increment_pressed"]
 
 [editable path="VBoxContainer/Control/GridContainer/Bowser"]
+[editable path="VBoxContainer/Control/GridContainer/Zelda"]
+[editable path="VBoxContainer/Control/GridContainer/BiggyFishy"]
+[editable path="VBoxContainer/Control/GridContainer/SpaceShip"]
+[editable path="VBoxContainer/Control/GridContainer/Dodo"]
 [editable path="VBoxContainer/Control/GridContainer/Random"]
+[editable path="CharacterPicker"]
+[editable path="CharacterPicker2"]
