@@ -13,10 +13,9 @@ func _input(event):
 		if not event.pressed:	# handle release
 			if grabbed:
 				grabbed.playerSlotRef.markReleased(true)
-		if len(grabbableObjects) <= 0:
+				grabbed = null
 			return
-		if grabbed:
-			grabbed = null
+		if len(grabbableObjects) <= 0: # nothing to grab
 			return
 		var closest = grabbableObjects[0]
 		var dist = global_position.distance_squared_to(closest.global_position)
@@ -37,9 +36,9 @@ func _process(_delta):
 
 func updateRotation():
 	if len(grabbableObjects):
-		rotation_degrees = -15
+		$Sprite.rotation_degrees = -15
 	else:
-		rotation_degrees = 0
+		$Sprite.rotation_degrees = 0
 
 
 func _on_PlayerHand_area_entered(area):

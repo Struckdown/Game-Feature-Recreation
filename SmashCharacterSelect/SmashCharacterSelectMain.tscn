@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://SmashCharacterSelect/CharacterCell.tscn" type="PackedScene" id=1]
 [ext_resource path="res://SmashCharacterSelect/PlayerSlot.tscn" type="PackedScene" id=2]
@@ -37,6 +37,8 @@
 [ext_resource path="res://SourceSansProRegular/SourceSansPro-Regular.ttf" type="DynamicFontData" id=35]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/icon_mario.png" type="Texture" id=36]
 [ext_resource path="res://SmashCharacterSelect/Assets/Characters/icon_zelda.png" type="Texture" id=37]
+[ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_commander.png" type="Texture" id=38]
+[ext_resource path="res://SmashCharacterSelect/Assets/Characters/char_sockrates.png" type="Texture" id=39]
 
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
@@ -466,7 +468,7 @@ margin_right = -189.048
 margin_bottom = 42.68
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/Zelda/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
-margin_right = 153.0
+margin_right = 152.0
 margin_bottom = 139.0
 texture = ExtResource( 23 )
 
@@ -565,7 +567,7 @@ margin_right = -240.048
 margin_bottom = -44.985
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
-margin_right = 78.0
+margin_right = 77.0
 margin_bottom = 67.0
 texture = ExtResource( 33 )
 
@@ -581,12 +583,102 @@ margin_bottom = 16.0
 custom_fonts/font = SubResource( 5 )
 text = "Space Ship"
 
-[node name="Dodo" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
+[node name="Commander" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 196.0
 margin_top = 207.0
 margin_right = 388.0
+margin_bottom = 272.0
+charName = "Commander"
+characterPortrait = ExtResource( 38 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Commander" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="VBoxContainer" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Control" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 45.0
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer/Control/BG" index="0"]
+margin_left = 113.952
+margin_top = 4.52
+margin_right = -240.048
+margin_bottom = -44.985
+
+[node name="Portrait" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
+margin_right = 77.0
+margin_bottom = 67.0
+texture = ExtResource( 38 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer" index="1"]
+margin_top = 49.0
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Name" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer/MarginContainer" index="0"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 5 )
+text = "Commander"
+
+[node name="Sockrates" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 392.0
+margin_top = 207.0
+margin_right = 584.0
+margin_bottom = 272.0
+charName = "Sockrates"
+characterPortrait = ExtResource( 39 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Sockrates" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="VBoxContainer" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Control" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer" index="0"]
+margin_right = 192.0
+margin_bottom = 45.0
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer/Control/BG" index="0"]
+margin_left = 113.952
+margin_top = 4.52
+margin_right = -240.048
+margin_bottom = -44.985
+
+[node name="Portrait" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
+margin_right = 77.0
+margin_bottom = 67.0
+texture = ExtResource( 39 )
+
+[node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer" index="1"]
+margin_top = 49.0
+margin_right = 192.0
+margin_bottom = 65.0
+
+[node name="Name" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer/MarginContainer" index="0"]
+margin_left = 71.0
+margin_right = 120.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 5 )
+text = "Sockrates"
+
+[node name="Dodo" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 588.0
+margin_top = 207.0
+margin_right = 780.0
 margin_bottom = 272.0
 charName = "Dodo"
 characterPortrait = ExtResource( 34 )
@@ -610,7 +702,7 @@ margin_right = -219.048
 margin_bottom = -44.32
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/Dodo/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
-margin_right = 87.0
+margin_right = 86.0
 margin_bottom = 53.0
 texture = ExtResource( 34 )
 
@@ -629,9 +721,9 @@ text = "Dodo"
 [node name="Raine" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 392.0
+margin_left = 784.0
 margin_top = 207.0
-margin_right = 584.0
+margin_right = 976.0
 margin_bottom = 272.0
 charName = "Raine"
 characterPortrait = ExtResource( 32 )
@@ -639,9 +731,9 @@ characterPortrait = ExtResource( 32 )
 [node name="Random" parent="VBoxContainer/Control/GridContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 588.0
+margin_left = 980.0
 margin_top = 207.0
-margin_right = 780.0
+margin_right = 1172.0
 margin_bottom = 272.0
 charName = "Random"
 characterPortrait = ExtResource( 3 )
@@ -665,7 +757,7 @@ margin_right = -255.048
 margin_bottom = -45.653
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/Random/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
-margin_right = 59.0
+margin_right = 58.0
 margin_bottom = 61.0
 texture = ExtResource( 3 )
 
@@ -700,12 +792,15 @@ size_flags_vertical = 3
 anchor_right = 0.0
 margin_right = 638.0
 margin_bottom = 359.0
+playerName = "Player 1"
 
 [node name="PlayerSlot2" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_left = 642.0
 margin_right = 1280.0
 margin_bottom = 359.0
+playerName = "Player 2"
+playerNumber = 2
 
 [node name="ReturnButton" type="MarginContainer" parent="."]
 margin_right = 40.0
@@ -758,6 +853,8 @@ position = Vector2( 443, 352 )
 [editable path="VBoxContainer/Control/GridContainer/Zelda"]
 [editable path="VBoxContainer/Control/GridContainer/BiggyFishy"]
 [editable path="VBoxContainer/Control/GridContainer/SpaceShip"]
+[editable path="VBoxContainer/Control/GridContainer/Commander"]
+[editable path="VBoxContainer/Control/GridContainer/Sockrates"]
 [editable path="VBoxContainer/Control/GridContainer/Dodo"]
 [editable path="VBoxContainer/Control/GridContainer/Random"]
 [editable path="CharacterPicker"]

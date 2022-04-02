@@ -2,7 +2,6 @@ extends Node2D
 
 export(int) var playerNum = 1
 export(NodePath) var playerSlotRef = null
-var overlappingCharacters = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,15 +12,29 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	var overlappingCharacters = []
 	for i in $Token/Area2D.get_overlapping_areas():
-		var anyCharactersAtAll = false
 		if i.is_in_group("selectableCharacter"):
-			anyCharactersAtAll = true
-			if playerSlotRef:
-				var pic = i.owner.characterPortrait
-				var icon = i.owner.gameicon
-				var charName = i.owner.charName
-				playerSlotRef.selectNewCharacter(charName, pic.resource_path, icon.resource_path)
-				break
-		if not anyCharactersAtAll:
-			playerSlotRef.selectNewCharacter("", null, null)
+			overlappingCharacters.append(i)
+	if len(overlappingCharacters) == 0:
+		playerSlotRef.selectNewCharacter("", null, null)
+		return
+	var bestChoice = getClosest(overlappingCharacters)
+
+	if playerSlotRef:
+		var pic = bestChoice.owner.characterPortrait
+		var icon = bestChoice.owner.gameicon
+		var charName = bestChoice.owner.charName
+		playerSlotRef.selectNewCharacter(charName, pic.resource_path, icon.resource_path)
+
+
+func getClosest(elements):
+	var closest = null
+	var dist = INF
+	for ele in elements:
+		var measuredDist = global_position.distance_squared_to(ele.global_position)
+		if measuredDist < dist:
+			dist = measuredDist
+			closest = ele
+	return closest
+	

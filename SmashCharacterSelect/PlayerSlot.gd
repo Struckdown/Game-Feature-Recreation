@@ -3,12 +3,15 @@ extends MarginContainer
 var charName
 var characterTexture
 var icon
+export(String) var playerName
+export(int) var playerNumber = 1
 
 signal finished
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$slotBG/slotBorder/PlayerInfo/PlayerNameContainer/PlayerNameBG/PlayerName.text = playerName
+	$slotBG/slotBorder/PlayerInfo/PlayerInfo/PlayerNum.text = "P" + str(playerNumber)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -27,7 +30,7 @@ func updateCharacterData():
 		$slotBG/slotBorder/GameIconBG/GameIcon.texture = null
 
 func selectNewCharacter(_charName, _character, _icon):
-	if _charName == charName:	# return early if same character
+	if _charName == $slotBG/slotBorder/PlayerInfo/CharacterName.text :	# return early if same character
 		return
 	charName = _charName
 	characterTexture = _character

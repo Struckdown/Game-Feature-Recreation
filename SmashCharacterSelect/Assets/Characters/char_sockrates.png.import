@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/char_dodo.png-e2b6b778aa4d6e6638669726652e3ccc.stex"
+path="res://.import/char_sockrates.png-c12c7051f2bd2cead4539f43af53bb2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SmashCharacterSelect/Assets/Characters/char_dodo.png"
-dest_files=[ "res://.import/char_dodo.png-e2b6b778aa4d6e6638669726652e3ccc.stex" ]
+source_file="res://SmashCharacterSelect/Assets/Characters/char_sockrates.png"
+dest_files=[ "res://.import/char_sockrates.png-c12c7051f2bd2cead4539f43af53bb2e.stex" ]
 
 [params]
 
