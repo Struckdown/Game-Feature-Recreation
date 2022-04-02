@@ -121,8 +121,8 @@ anchor_right = 0.702
 anchor_bottom = 0.996
 margin_left = 69.168
 margin_top = -41.0
-margin_right = 24.832
-margin_bottom = -69.26
+margin_right = 50.832
+margin_bottom = -55.26
 texture = ExtResource( 1 )
 expand = true
 

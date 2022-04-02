@@ -11,7 +11,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	var overlappingCharacters = []
 	for i in $Token/Area2D.get_overlapping_areas():
 		if i.is_in_group("selectableCharacter"):
