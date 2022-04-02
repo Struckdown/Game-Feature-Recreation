@@ -28,3 +28,7 @@ func _on_Increment_pressed():
 	if stock >= 100:
 		stock = 1
 	$TopBar/SubOption/Lbl.text = str(stock)
+
+
+func _on_Timer_timeout():
+	pass # Replace with function body.

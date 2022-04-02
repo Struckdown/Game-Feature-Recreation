@@ -6,15 +6,15 @@
 [ext_resource path="res://SmashCharacterSelect/CharacterCell.gd" type="Script" id=4]
 [ext_resource path="res://SourceSansProRegular/SourceSansPro-Regular.ttf" type="DynamicFontData" id=5]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 136, 91 )
-
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
 size = 6
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 94, 22 )
 
 [node name="CharacterCell" type="MarginContainer"]
 anchor_right = 1.0
@@ -57,10 +57,10 @@ anchor_left = -0.281
 anchor_top = -0.256
 anchor_right = 1.969
 anchor_bottom = 2.333
-margin_left = -0.0159988
-margin_top = -0.0159998
-margin_right = -0.0160065
-margin_bottom = 0.0129929
+margin_left = 96.622
+margin_top = -0.0159988
+margin_right = 96.622
+margin_bottom = 0.0130005
 
 [node name="Portrait" type="TextureRect" parent="MarginContainer/VBoxContainer/Control/BG/MarginContainer"]
 margin_right = 589.0
@@ -70,12 +70,6 @@ size_flags_vertical = 3
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 5
-
-[node name="SelectionArea" type="Area2D" parent="MarginContainer/VBoxContainer/Control/BG" groups=["selectableCharacter"]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/Control/BG/SelectionArea"]
-position = Vector2( 126, 81 )
-shape = SubResource( 2 )
 
 [node name="MarginContainer" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
 margin_top = 176.0
@@ -95,3 +89,9 @@ valign = 1
 visible = false
 position = Vector2( 1117, 395 )
 texture = ExtResource( 1 )
+
+[node name="SelectionArea" type="Area2D" parent="." groups=["selectableCharacter"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SelectionArea"]
+position = Vector2( 94, 21 )
+shape = SubResource( 2 )
