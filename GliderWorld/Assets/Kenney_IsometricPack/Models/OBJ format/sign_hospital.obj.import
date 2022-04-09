@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/sign_hospital.obj-37d8a66a1ad96e2407c38bc8375d7077.mesh"
+
+[deps]
+
+files=[ "res://.import/sign_hospital.obj-37d8a66a1ad96e2407c38bc8375d7077.mesh" ]
+
+source_file="res://GliderWorld/Assets/Kenney_IsometricPack/Models/OBJ format/sign_hospital.obj"
+dest_files=[ "res://.import/sign_hospital.obj-37d8a66a1ad96e2407c38bc8375d7077.mesh", "res://.import/sign_hospital.obj-37d8a66a1ad96e2407c38bc8375d7077.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

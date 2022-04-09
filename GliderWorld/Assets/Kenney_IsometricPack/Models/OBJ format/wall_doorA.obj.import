@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wall_doorA.obj-b59538d0f7f3e92e99984138d019911e.mesh"
+
+[deps]
+
+files=[ "res://.import/wall_doorA.obj-b59538d0f7f3e92e99984138d019911e.mesh" ]
+
+source_file="res://GliderWorld/Assets/Kenney_IsometricPack/Models/OBJ format/wall_doorA.obj"
+dest_files=[ "res://.import/wall_doorA.obj-b59538d0f7f3e92e99984138d019911e.mesh", "res://.import/wall_doorA.obj-b59538d0f7f3e92e99984138d019911e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

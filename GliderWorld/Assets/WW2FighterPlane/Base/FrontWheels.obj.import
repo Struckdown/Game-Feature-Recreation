@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FrontWheels.obj-1f30530249603832bb97a06a8011d6bf.mesh"
+
+[deps]
+
+files=[ "res://.import/FrontWheels.obj-1f30530249603832bb97a06a8011d6bf.mesh" ]
+
+source_file="res://GliderWorld/Assets/WW2FighterPlane/Base/FrontWheels.obj"
+dest_files=[ "res://.import/FrontWheels.obj-1f30530249603832bb97a06a8011d6bf.mesh", "res://.import/FrontWheels.obj-1f30530249603832bb97a06a8011d6bf.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

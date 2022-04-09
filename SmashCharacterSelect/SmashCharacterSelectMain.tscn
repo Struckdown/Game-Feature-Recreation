@@ -290,7 +290,6 @@ margin_bottom = 65.0
 [node name="Name" parent="VBoxContainer/Control/GridContainer/Bowser/MarginContainer/VBoxContainer/MarginContainer" index="0"]
 margin_left = 72.0
 margin_right = 120.0
-margin_bottom = 20.0
 custom_fonts/font = SubResource( 1 )
 text = "Bowser"
 
@@ -504,7 +503,7 @@ margin_bottom = 65.0
 
 [node name="Control" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer" index="0"]
 margin_right = 192.0
-margin_bottom = 47.0
+margin_bottom = 41.0
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer/Control/BG" index="0"]
 margin_left = 110.952
@@ -514,18 +513,17 @@ margin_bottom = -50.651
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
 margin_right = 263.0
-margin_bottom = 74.0
+margin_bottom = 58.0
 texture = ExtResource( 30 )
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer" index="1"]
-margin_top = 51.0
+margin_top = 45.0
 margin_right = 192.0
 margin_bottom = 65.0
 
 [node name="Name" parent="VBoxContainer/Control/GridContainer/BiggyFishy/MarginContainer/VBoxContainer/MarginContainer" index="0"]
 margin_left = 70.0
 margin_right = 122.0
-margin_bottom = 14.0
 custom_fonts/font = SubResource( 4 )
 text = "Biggy Fishy"
 
@@ -558,7 +556,7 @@ margin_bottom = 65.0
 
 [node name="Control" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer" index="0"]
 margin_right = 192.0
-margin_bottom = 45.0
+margin_bottom = 41.0
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer/Control/BG" index="0"]
 margin_left = 113.952
@@ -568,18 +566,17 @@ margin_bottom = -44.985
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
 margin_right = 77.0
-margin_bottom = 67.0
+margin_bottom = 56.0
 texture = ExtResource( 33 )
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer" index="1"]
-margin_top = 49.0
+margin_top = 45.0
 margin_right = 192.0
 margin_bottom = 65.0
 
 [node name="Name" parent="VBoxContainer/Control/GridContainer/SpaceShip/MarginContainer/VBoxContainer/MarginContainer" index="0"]
 margin_left = 68.0
 margin_right = 123.0
-margin_bottom = 16.0
 custom_fonts/font = SubResource( 5 )
 text = "Space Ship"
 
@@ -603,7 +600,7 @@ margin_bottom = 65.0
 
 [node name="Control" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer" index="0"]
 margin_right = 192.0
-margin_bottom = 45.0
+margin_bottom = 41.0
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer/Control/BG" index="0"]
 margin_left = 113.952
@@ -613,18 +610,17 @@ margin_bottom = -44.985
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
 margin_right = 77.0
-margin_bottom = 67.0
+margin_bottom = 56.0
 texture = ExtResource( 38 )
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer" index="1"]
-margin_top = 49.0
+margin_top = 45.0
 margin_right = 192.0
 margin_bottom = 65.0
 
 [node name="Name" parent="VBoxContainer/Control/GridContainer/Commander/MarginContainer/VBoxContainer/MarginContainer" index="0"]
 margin_left = 64.0
 margin_right = 128.0
-margin_bottom = 16.0
 custom_fonts/font = SubResource( 5 )
 text = "Commander"
 
@@ -648,7 +644,7 @@ margin_bottom = 65.0
 
 [node name="Control" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer" index="0"]
 margin_right = 192.0
-margin_bottom = 45.0
+margin_bottom = 41.0
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer/Control/BG" index="0"]
 margin_left = 113.952
@@ -658,18 +654,17 @@ margin_bottom = -44.985
 
 [node name="Portrait" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer/Control/BG/MarginContainer" index="0"]
 margin_right = 77.0
-margin_bottom = 67.0
+margin_bottom = 56.0
 texture = ExtResource( 39 )
 
 [node name="MarginContainer" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer" index="1"]
-margin_top = 49.0
+margin_top = 45.0
 margin_right = 192.0
 margin_bottom = 65.0
 
 [node name="Name" parent="VBoxContainer/Control/GridContainer/Sockrates/MarginContainer/VBoxContainer/MarginContainer" index="0"]
 margin_left = 71.0
 margin_right = 120.0
-margin_bottom = 16.0
 custom_fonts/font = SubResource( 5 )
 text = "Sockrates"
 
@@ -769,7 +764,6 @@ margin_bottom = 65.0
 [node name="Name" parent="VBoxContainer/Control/GridContainer/Random/MarginContainer/VBoxContainer/MarginContainer" index="0"]
 margin_left = 69.0
 margin_right = 122.0
-margin_bottom = 20.0
 custom_fonts/font = SubResource( 2 )
 text = "Random"
 

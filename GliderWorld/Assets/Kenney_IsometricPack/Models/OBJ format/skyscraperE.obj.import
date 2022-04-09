@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/skyscraperE.obj-028605fa11e1615d354dc7e07d74815a.mesh"
+
+[deps]
+
+files=[ "res://.import/skyscraperE.obj-028605fa11e1615d354dc7e07d74815a.mesh" ]
+
+source_file="res://GliderWorld/Assets/Kenney_IsometricPack/Models/OBJ format/skyscraperE.obj"
+dest_files=[ "res://.import/skyscraperE.obj-028605fa11e1615d354dc7e07d74815a.mesh", "res://.import/skyscraperE.obj-028605fa11e1615d354dc7e07d74815a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/RearWheel.obj-4487e0f473919caf3dda53f4b2c6bc12.mesh"
+
+[deps]
+
+files=[ "res://.import/RearWheel.obj-4487e0f473919caf3dda53f4b2c6bc12.mesh" ]
+
+source_file="res://GliderWorld/Assets/WW2FighterPlane/Base/RearWheel.obj"
+dest_files=[ "res://.import/RearWheel.obj-4487e0f473919caf3dda53f4b2c6bc12.mesh", "res://.import/RearWheel.obj-4487e0f473919caf3dda53f4b2c6bc12.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

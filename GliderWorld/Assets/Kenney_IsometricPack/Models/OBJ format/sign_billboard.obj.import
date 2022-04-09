@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/sign_billboard.obj-e1851f78e4ea76ca0543cc2d3f20ddaf.mesh"
+
+[deps]
+
+files=[ "res://.import/sign_billboard.obj-e1851f78e4ea76ca0543cc2d3f20ddaf.mesh" ]
+
+source_file="res://GliderWorld/Assets/Kenney_IsometricPack/Models/OBJ format/sign_billboard.obj"
+dest_files=[ "res://.import/sign_billboard.obj-e1851f78e4ea76ca0543cc2d3f20ddaf.mesh", "res://.import/sign_billboard.obj-e1851f78e4ea76ca0543cc2d3f20ddaf.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

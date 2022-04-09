@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/large_buildingC.obj-6b4a2785bb9ecf03962e9b45c3a2f48c.mesh"
+
+[deps]
+
+files=[ "res://.import/large_buildingC.obj-6b4a2785bb9ecf03962e9b45c3a2f48c.mesh" ]
+
+source_file="res://GliderWorld/Assets/Kenney_IsometricPack/Models/OBJ format/large_buildingC.obj"
+dest_files=[ "res://.import/large_buildingC.obj-6b4a2785bb9ecf03962e9b45c3a2f48c.mesh", "res://.import/large_buildingC.obj-6b4a2785bb9ecf03962e9b45c3a2f48c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

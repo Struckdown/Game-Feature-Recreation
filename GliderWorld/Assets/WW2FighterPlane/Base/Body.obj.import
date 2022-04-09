@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Body.obj-2300fcc8b96b0471ba6ecc2dcb760398.mesh"
+
+[deps]
+
+files=[ "res://.import/Body.obj-2300fcc8b96b0471ba6ecc2dcb760398.mesh" ]
+
+source_file="res://GliderWorld/Assets/WW2FighterPlane/Base/Body.obj"
+dest_files=[ "res://.import/Body.obj-2300fcc8b96b0471ba6ecc2dcb760398.mesh", "res://.import/Body.obj-2300fcc8b96b0471ba6ecc2dcb760398.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

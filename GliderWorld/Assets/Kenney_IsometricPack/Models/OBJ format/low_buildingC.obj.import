@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/low_buildingC.obj-52f4ff109aed317434880b0f38fec31c.mesh"
+
+[deps]
+
+files=[ "res://.import/low_buildingC.obj-52f4ff109aed317434880b0f38fec31c.mesh" ]
+
+source_file="res://GliderWorld/Assets/Kenney_IsometricPack/Models/OBJ format/low_buildingC.obj"
+dest_files=[ "res://.import/low_buildingC.obj-52f4ff109aed317434880b0f38fec31c.mesh", "res://.import/low_buildingC.obj-52f4ff109aed317434880b0f38fec31c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
